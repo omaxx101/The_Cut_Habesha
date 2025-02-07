@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cut Ethiopia - Barber Booking App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-green: #078930;
+            --primary-yellow: #FCDD09;
+            --primary-red: #DA121A;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: var(--primary-green);
+            padding: 1rem;
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('barber-shop-bg.jpg');
+            background-size: cover;
+            padding: 6rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-green);
+        }
+
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .payment-gateways {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .payment-gateways img {
+            height: 40px;
+        }
+
+        .download-cta {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .flag-stripe {
+            height: 5px;
+            background: linear-gradient(to right,
+                var(--primary-green) 33%,
+                var(--primary-yellow) 33% 66%,
+                var(--primary-red) 66%
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="flag-stripe"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1>The Cut Ethiopia</h1>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>Your Perfect Look, Just a Tap Away</h2>
+        <p>Connect with top barbers across Ethiopia</p>
+        <div class="download-buttons">
+            <a href="#download" class="button">
+                <img src="google-play-badge.png" alt="Google Play" width="150">
+            </a>
+            <a href="#download" class="button">
+                <img src="app-store-badge.png" alt="App Store" width="150">
+            </a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Key Features</h2>
+        <div class="feature-grid">
+            <!-- Feature cards from previous example -->
+            <!-- Update with actual features from README -->
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="client-flow">
+            <h3>For Clients</h3>
+            <ol>
+                <li>Download & create account</li>
+                <li>Search nearby barbers</li>
+                <li>Book & pay securely</li>
+                <li>Enjoy your service</li>
+                <li>Rate your experience</li>
+            </ol>
+        </div>
+
+        <div class="barber-flow">
+            <h3>For Barbers</h3>
+            <ol>
+                <li>Register your business</li>
+                <li>Set availability & services</li>
+                <li>Manage appointments</li>
+                <li>Receive payments</li>
+                <li>Grow your business</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="payment-section">
+        <h2 class="section-title">Supported Payment Methods</h2>
+        <div class="payment-gateways">
+            <img src="telebirr-logo.png" alt="Telebirr">
+            <img src="cbe-birr-logo.png" alt="CBE Birr">
+            <img src="amole-logo.png" alt="Amole">
+        </div>
+    </section>
+
+    <section class="download-cta" id="download">
+        <h2>Available in 4 Languages</h2>
+        <p>Amharic | Afaan Oromo | Tigrinya | English</p>
+        <div class="download-buttons">
+            <!-- Repeat app store buttons -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us: support@thecutethiopia.com</p>
+            <p>+251-911511919</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 The Cut Ethiopia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
